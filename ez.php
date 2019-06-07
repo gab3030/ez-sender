@@ -19,7 +19,7 @@ if ($handle) {
     while (($email = fgets($handle, 4096)) !== false) {
 
 		$i<=$total;$i++; // set progress
-		$email = str_replace("\r\n", "", $email); // remove enter
+		$email = trim($email); // remove spaces
 
 		// set all 
 		$smtp_host = random_array_value($smtp)['host'];
