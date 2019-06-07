@@ -1,0 +1,6 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "^6.2",
+        "league/climate": "^3.5"
+    }
+}
