@@ -29,8 +29,10 @@ if ($handle) {
 		$message_subject = replace($config['message_subject'],$email);
 		$message_sender_email = replace($config['message_sender_email'],$email);
 		$message_sender_name = replace($config['message_sender_name'],$email);
-		$html_file = replace(file_get_contents($config['message_html']),$email);
-		$html_file_name = $config['message_html'];
+		$message_html_value = replace(file_get_contents($config['message_html']),$email);
+		$message_html_name = $config['message_html'];
+		$message_attach = $config['message_attach'];
+		$message_attach_rename = $config['message_attach_rename'];
 		$delay = $config['send_delay'];
 
 		// set smtp
@@ -44,31 +46,46 @@ if ($handle) {
 		$message = (new Swift_Message($message_subject))
 			->setFrom([$message_sender_email => $message_sender_name])
 			->setTo([$email])
-			->setBody($html_file, 'text/html')
+			->setBody($message_html_value, 'text/html')
 		;
 
 		// add headers
-		foreach (@$headers as $key => $value) {
-			$message->getHeaders()->addTextHeader($key, $value);
-		};
+		if (!empty($headers)) {
+			foreach ($headers as $key => $value) {
+				$message->getHeaders()->addTextHeader($key, $value);
+			};
+		}
+
+		// attach file
+		if (!empty($message_attach && $message_attach_rename)) {
+			$message->attach(
+				Swift_Attachment::fromPath($message_attach)->setFilename($message_attach_rename)
+			);
+		}	
 		
 		// begin send
 		$result = $mailer->send($message);
+		
+		// set kolom
+		$columns = [
+			["- SMTP Host : ".$smtp_host, 			"- Message html: ".$message_html_name],
+			["- SMTP Username : ".$smtp_username, 	"- Send Delay: ".$delay." Second"],
+			["- SMTP Port : ".$smtp_port, 			"- Message Attach: ".$message_attach],
+			["- SMTP Password : ***", 				"- Custom Header : ".berisi($headers)]
+		];
 
 		// print progress
 		$climate->clear();
-		echo $art;
-		$climate->white("Current Config:")->br();
-		$climate->error("-> SMTP Host: ".$smtp_host)->br();
-		$climate->error("-> SMTP Username: ".$smtp_username)->br();
-		$climate->error("-> Letter File: ".$html_file_name)->br();
-		$climate->error("-> Delay: ".$delay." Second")->br();
-		$climate->white("Current Progress:")->br();
-		$climate->comment("-> ".$message->getHeaders()->get('Message-ID')->toString());
-		$climate->comment("-> ".$message->getHeaders()->get('Date')->toString());
-		$climate->comment("-> ".$message->getHeaders()->get('From')->toString());
-		$climate->comment("-> ".$message->getHeaders()->get('Subject')->toString());
-		$climate->info("-> ".$message->getHeaders()->get('To')->toString());
+		$climate->error($art);
+		$climate->lightCyan("Current Config:")->br();
+		$climate->columns($columns);
+		$climate->br();
+		$climate->lightCyan("Current Progress:")->br();
+		$climate->comment("-> ".trim($message->getHeaders()->get('Message-ID')->toString()));
+		$climate->comment("-> ".trim($message->getHeaders()->get('Date')->toString()));
+		$climate->comment("-> ".trim($message->getHeaders()->get('From')->toString()));
+		$climate->comment("-> ".trim($message->getHeaders()->get('Subject')->toString()));
+		$climate->comment("-> ".$message->getHeaders()->get('To')->toString());
 		$climate->progress()->total($total)->current($i);
 		sleep($delay);
 

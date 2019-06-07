@@ -7,20 +7,22 @@ $smtp[] = array( "host" => "smtp.mailtrap.io", "port" => "587", "username" => "3
 // config 
 $config = array(
 
-    "send_delay" => "5",
-
-    "message_subject" => "Magic Happen !! ##email## - ##randoom_ip## - ##random_device## - ##random_negara##",
+    "message_subject" => "Magic Happen !! ##email## - ##randoom_ip## - ##random_device##",
     "message_sender_email" => "service@apple.com",
     "message_sender_name" => "Apple",
-    "message_html" => "letter.html"
+
+    "send_delay" => "5",
+    "message_html" => "letter.html",
+    "message_attach" => "test.pdf", // file asli
+    "message_attach_rename" => "helo.pdf" // rename file
 
 );
 
 // custom header
 $headers = array(
 
-    'X-Originating-IP' => 'xx',
-    'Authentication-Results' => 'xx',
-    'Received' => 'xxx',
+    // 'X-Originating-IP' => 'xx',
+    // 'Authentication-Results' => 'xx',
+    // 'Received' => 'xxx',
 
 );

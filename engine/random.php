@@ -9,6 +9,12 @@ $art = "
                                     Version 1.0                                             
 ";
 
+function berisi($input){
+    if (empty($input) ) {
+        return 'no';
+    } else { return 'yes';}
+}
+
 function random_array_value($arrX){
     $randIndex = array_rand($arrX);
     return $arrX[$randIndex];
