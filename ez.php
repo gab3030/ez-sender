@@ -65,27 +65,27 @@ if ($handle) {
 		
 		// begin send
 		$result = $mailer->send($message);
-		
-		// set kolom
-		$columns = [
-			["- SMTP Host : ".$smtp_host, 			"- Message html: ".$message_html_name],
-			["- SMTP Username : ".$smtp_username, 	"- Send Delay: ".$delay." Second"],
-			["- SMTP Port : ".$smtp_port, 			"- Message Attach: ".$message_attach],
-			["- SMTP Password : ***", 				"- Custom Header : ".berisi($headers)]
-		];
 
-		// print progress
 		$climate->clear();
 		$climate->error($art);
-		$climate->lightCyan("Current Config:")->br();
-		$climate->columns($columns);
+
+		// print config
+		$climate->table([
+			["- SMTP Host : ".$smtp_host, 			"- Message html: ".$message_html_name,		"- Custom Header : ".berisi($headers)],
+			["- SMTP Username : ".$smtp_username, 	"- Send Delay: ".$delay." Second",			"- soon !"],			
+			["- SMTP Port : ".$smtp_port, 			"- Message Attach: ".$message_attach, 		"- soon !"],
+		]);
 		$climate->br();
-		$climate->lightCyan("Current Progress:")->br();
-		$climate->comment("-> ".trim($message->getHeaders()->get('Message-ID')->toString()));
-		$climate->comment("-> ".trim($message->getHeaders()->get('Date')->toString()));
-		$climate->comment("-> ".trim($message->getHeaders()->get('From')->toString()));
-		$climate->comment("-> ".trim($message->getHeaders()->get('Subject')->toString()));
-		$climate->comment("-> ".$message->getHeaders()->get('To')->toString());
+
+		// print progress
+		$climate->table([
+			["-> ".trim($message->getHeaders()->get('Message-ID')->toString())],
+			["-> ".trim($message->getHeaders()->get('Date')->toString())],
+			["-> ".trim($message->getHeaders()->get('From')->toString())],
+			["-> ".trim($message->getHeaders()->get('Subject')->toString())],
+			["-> ".trim($message->getHeaders()->get('To')->toString())],
+		]);
+		$climate->br();
 		$climate->progress()->total($total)->current($i);
 		sleep($delay);
 
