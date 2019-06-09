@@ -21,6 +21,10 @@ Tools ini memungkinkan anda mengirim email secara masal/bulk dengan banyak kusto
 - Untuk Windows wajib add direktori php ke PATH  
 - Sangat disarankan menggunakan php versi 7
 
+### Screenshot :
+
+![](screenshot/ez-sender%20v.1.1.png)
+
 ### Dibuat Dengan :
 - [SwiftMailer](https://github.com/swiftmailer/swiftmailer)
 - [CLImate](https://github.com/thephpleague/climate)
