@@ -9,7 +9,7 @@ Tools ini memungkinkan anda mengirim email secara masal/bulk dengan banyak kusto
 
 ### Cara menjalankan di Linux :
 
-- download file "git clone  https://github.com/mukhlisakbr/ez-sender.git
+- download file "git clone  https://github.com/mukhlisakbr/ez-sender.git"
 - masuk ke direktori "cd ez-sender"  
 - jalankan dengan "php ez.php"
 
