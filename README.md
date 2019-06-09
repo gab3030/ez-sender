@@ -1,5 +1,7 @@
 # EZ-Sender - Rich and Free Email Sender
 
+[![GitHub stars](https://img.shields.io/github/stars/mukhlisakbr/ez-sender.svg)](https://github.com/mukhlisakbr/ez-sender/stargazers) [![GitHub forks](https://img.shields.io/github/forks/mukhlisakbr/ez-sender.svg)](https://github.com/mukhlisakbr/ez-sender/network)
+
 Tools ini memungkinkan anda mengirim email secara masal/bulk dengan banyak kustomisasi. Diperuntukan untuk yang paham penggunaan dan resikonya. Kedepan nya project ini akan terus di update secara open source. 
 
 ### Cara menjalankan di Windows :

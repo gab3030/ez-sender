@@ -18,7 +18,7 @@ function replace ($sumber,$email) {
         @$match_string_low[0][0], 
         @$match_string_uplow[0][0], 
         @$match_mix[0][0],
-        @"##randoom_ip##",
+        @"##random_ip##",
         @"##random_negara##",
         @"##random_device##",
         @"##email##",
