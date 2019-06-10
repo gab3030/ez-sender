@@ -1,4 +1,4 @@
-# EZ-Sender - Rich and Free Email Sender
+# EZ Sender - Rich and Free Email Sender
 
 ![](https://img.shields.io/badge/version-v1.1-green.svg) [![GitHub stars](https://img.shields.io/github/stars/mukhlisakbr/ez-sender.svg)](https://github.com/mukhlisakbr/ez-sender/stargazers) [![GitHub forks](https://img.shields.io/github/forks/mukhlisakbr/ez-sender.svg)](https://github.com/mukhlisakbr/ez-sender/network) [![GitHub license](https://img.shields.io/github/license/mukhlisakbr/ez-sender.svg?style=popout)](https://github.com/mukhlisakbr/ez-sender/blob/master/LICENSE.md)
 
