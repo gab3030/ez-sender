@@ -4,7 +4,7 @@ require_once 'engine/random.php';
 
 date_default_timezone_set("Asia/Jakarta");
 
-function replace ($sumber,$email) {
+function replace ($sumber,$email,$links) {
     
     preg_match_all("/##random_number_(\d+)##/", $sumber, $match_number);
     preg_match_all("/##random_string_up_(\d+)##/", $sumber, $match_string_up);
@@ -22,7 +22,8 @@ function replace ($sumber,$email) {
         @"##random_negara##",
         @"##random_device##",
         @"##email##",
-        @"##date##"
+        @"##date##",
+        @"##random_link##"
         
     ];
 
@@ -32,11 +33,12 @@ function replace ($sumber,$email) {
         random_string_low(@$match_string_low[1][0]), 
         random_string_uplow(@$match_string_uplow[1][0]), 
         random_mix(@$match_mix[1][0]),
-        random_IP(),
+        random_ip(),
         random_negara(),
         random_device(),
         $email,
-        date("F j, Y, g:i a")
+        date("F j, Y, g:i a"),
+        random_array_value($links)
 
     ];
     

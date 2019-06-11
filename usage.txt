@@ -10,3 +10,4 @@ replace tags :
 ##random_device##
 ##email##
 ##date##
+##random_link##

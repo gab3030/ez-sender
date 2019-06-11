@@ -2,9 +2,9 @@
 
 $art = "
    __  _____      __                _               ||  
-  /__\/ _  /     / _\ ___ _ __   __| | ___ _ __     ||  Last Update : 09 / 06 / 2019
- /_\  \// / _____\ \ / _ \ '_ \ / _` |/ _ \ '__|    ||  Current Version : 1.1
-//__   / //\_____|\ \  __/ | | | (_| |  __/ |       ||  Codename : Semut
+  /__\/ _  /     / _\ ___ _ __   __| | ___ _ __     ||  Last Update : 12 / 06 / 2019
+ /_\  \// / _____\ \ / _ \ '_ \ / _` |/ _ \ '__|    ||  Current Version : 1.2
+//__   / //\_____|\ \  __/ | | | (_| |  __/ |       ||  Codename : Kambing
 \__/  /____/     \__/\___|_| |_|\__,_|\___|_|       ||  Author : Mukhlis Akbarrudin
 this is a free tool don't ever want to buy it       ||                                              
 ";
@@ -16,8 +16,8 @@ function berisi($input){
 }
 
 function random_array_value($arrX){
-    $randIndex = array_rand($arrX);
-    return $arrX[$randIndex];
+    @$randIndex = array_rand(@$arrX);
+    return @$arrX[@$randIndex];
 }
 
 function random_number($length) {
@@ -70,7 +70,7 @@ function random_mix($length) {
     return $random;
 }
 
-function random_IP () {
+function random_ip () {
     return "".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255);
 }
 
