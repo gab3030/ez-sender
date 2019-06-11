@@ -46,7 +46,7 @@ Coming soon :)
 
 ### Screenshot :
 
-![](screenshot/ez-sender%20v.1.2.png)
+![](screenshot/ez-sender%20v1.2.png)
 
 ### Dibuat Dengan :
 
