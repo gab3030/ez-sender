@@ -1,4 +1,3 @@
-
 # EZ Sender - Rich and Free Email Sender
 
 ![](https://img.shields.io/badge/version-v1.2-green.svg) ![](https://img.shields.io/github/stars/mukhlisakbr/ez-sender.svg)  ![](https://img.shields.io/github/forks/mukhlisakbr/ez-sender.svg)
