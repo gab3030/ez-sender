@@ -2,43 +2,43 @@
 
 ![](https://img.shields.io/badge/version-v1.2-green.svg) ![](https://img.shields.io/github/stars/mukhlisakbr/ez-sender.svg)  ![](https://img.shields.io/github/forks/mukhlisakbr/ez-sender.svg)
 
-Tools ini memungkinkan anda mengirim email secara masal/bulk dengan banyak kustomisasi. Diperuntukan untuk yang paham penggunaan dan resikonya. Kedepan nya project ini akan terus di update secara open source.
+This tool allows you to send mass / bulk emails with lots of customization. Intended for those who understand the use and risks. In the future, this project will be continuously developed in open source.
 
-### Fitur Saat ini :
-| Nama | Ada ? |
+### Feature :
+| Name | exist ? |
 |--|--|
+| Change Encoding | ✅ |
+| Change Charset | ✅ |
 | Send Ratio | ✅ |
 | Random Links | ✅ |
-| Random Subject  | ✅ |
-| Random Sender Email | ✅ |
-| Random Sender Name | ✅ |
-| Random SMTP | ✅ |
+| Multy Subject  | ✅ |
+| Multy From Email | ✅ |
+| Multy From Name | ✅ |
+| Multy SMTP | ✅ |
 | Custom SMTP Security | ✅ |
 | Custom Headers | ✅ |
-| Replacement Tags | ✅ |
-| Html Message | ✅ |
+| Lots of Replacement Tags | ✅ |
 | Attachments File | ✅ |
 | Rename Attachments | ✅ |
-| Easy Config, Easy Inbox | ✅ |
 
-### Cara menjalankan di Windows :
+### Run on Windows :
 
-- download file "https://github.com/mukhlisakbr/ez-sender/archive/master.zip"
-- extract dan buka "ez-sender-run.bat"
+- Download file "https://github.com/mukhlisakbr/ez-sender/archive/master.zip"
+- Extract zip and open "run.bat"
 
-### Cara menjalankan di Linux :
+### Run on Linux :
 
-- download file "git clone https://github.com/mukhlisakbr/ez-sender.git"
-- masuk ke direktori "cd ez-sender"
-- jalankan dengan "php ez.php"
+- Download file "git clone https://github.com/mukhlisakbr/ez-sender.git"
+- Enter directory "cd ez-sender"
+- Execute this command "php ez.php"
 
-### Persyaratan :
+### Requirements :
 
-- Edit file config.php sesuaikan sesuai kebutuhan
-- Penggunaan tags bisa baca di usage.txt
-- Untuk Windows wajib ada xampp terinstall di drive c
-- Untuk Windows wajib add direktori php ke PATH
-- Sangat disarankan menggunakan php versi 7
+- Only allowed to edit files in the "/configuration" folder
+- Using tags can be read on usage.txt
+- For Windows you must have "xampp" installed at the default location
+- For Windows you must add the "php" directory to PATH
+- It is strongly recommended to use PHP version 7 
 
 ### Tutorial Video : 
 
@@ -48,11 +48,11 @@ Coming soon :)
 
 ![](screenshot/ez-sender%20v1.2.png)
 
-### Dibuat Dengan :
+### Made with :
 
 -  [SwiftMailer](https://github.com/swiftmailer/swiftmailer)
 -  [CLImate](https://github.com/thephpleague/climate)
 
 ### Note :
 
-Bagi yang ada saran fitur atau report bug bisa kirim ke https://www.facebook.com/mukhlisakbr
+For those who have feature suggestions or bug reports can send to https://www.facebook.com/mukhlisakbr
