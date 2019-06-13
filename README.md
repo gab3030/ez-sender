@@ -4,7 +4,7 @@
 
 This tool allows you to send mass / bulk emails with lots of customization. Intended for those who understand the use and risks. In the future, this project will be continuously developed in open source.
 
-### Feature :
+### Feature
 | Name | exist ? |
 |--|--|
 | Change Encoding | ✅ |
@@ -21,18 +21,18 @@ This tool allows you to send mass / bulk emails with lots of customization. Inte
 | Attachments File | ✅ |
 | Rename Attachments | ✅ |
 
-### Run on Windows :
+### Run on Windows
 
 - Download file "https://github.com/mukhlisakbr/ez-sender/archive/master.zip"
 - Extract zip and open "run.bat"
 
-### Run on Linux :
+### Run on Linux
 
 - Download file "git clone https://github.com/mukhlisakbr/ez-sender.git"
 - Enter directory "cd ez-sender"
 - Execute this command "php ez.php"
 
-### Requirements :
+### Requirements
 
 - Only allowed to edit files in the "/configuration" folder
 - Using tags can be read on usage.txt
@@ -40,19 +40,19 @@ This tool allows you to send mass / bulk emails with lots of customization. Inte
 - For Windows you must add the "php" directory to PATH
 - It is strongly recommended to use PHP version 7 
 
-### Tutorial Video : 
+### Tutorial Video
 
-Coming soon :)
+- Coming soon :)
 
-### Screenshot :
+### Screenshot
 
 ![](screenshot/ez-sender%20v1.2.png)
 
-### Made with :
+### Made with
 
 -  [SwiftMailer](https://github.com/swiftmailer/swiftmailer)
 -  [CLImate](https://github.com/thephpleague/climate)
 
-### Note :
+### Note
 
 For those who have feature suggestions or bug reports can send to https://www.facebook.com/mukhlisakbr
