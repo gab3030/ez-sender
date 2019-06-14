@@ -1,6 +1,6 @@
 # EZ Sender - Rich and Free Email Sender
 
-![](https://img.shields.io/badge/version-v1.2-green.svg) ![](https://img.shields.io/github/stars/mukhlisakbr/ez-sender.svg)  ![](https://img.shields.io/github/forks/mukhlisakbr/ez-sender.svg)
+![](https://img.shields.io/badge/version-v1.3-green.svg) ![](https://img.shields.io/github/stars/mukhlisakbr/ez-sender.svg)  ![](https://img.shields.io/github/forks/mukhlisakbr/ez-sender.svg)
 
 This tool allows you to send mass / bulk emails with lots of customization. Intended for those who understand the use and risks. In the future, this project will be continuously developed in open source.
 
