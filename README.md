@@ -46,7 +46,7 @@ This tool allows you to send mass / bulk emails with lots of customization. Inte
 
 ### Screenshot
 
-![](screenshot/ez-sender%20v1.2.png)
+![](screenshot/ez-sender%20v1.3.png)
 
 ### Made with
 
