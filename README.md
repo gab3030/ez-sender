@@ -55,4 +55,5 @@ This tool allows you to send mass / bulk emails with lots of customization. Inte
 
 ### Note
 
-For those who have feature suggestions or bug reports can send to https://www.facebook.com/mukhlisakbr
+- Please help me by contributing star, fork, and follow my github, and not recode it by removing copyright
+- For those who have feature suggestions or bug reports can send to https://www.facebook.com/mukhlisakbr
