@@ -1,6 +1,8 @@
 <?php
 
-require_once 'engine/random.php';
+// don't change anything
+
+require_once('modules/random.php');
 
 date_default_timezone_set("Asia/Jakarta");
 

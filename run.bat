@@ -3,7 +3,7 @@ set PATH=%PATH%;c:\xampp\php
 title EZ-Sender - Rich and Free Email Sender
 :runez
 
-php ez.php
+php run.php
 pause
 cls
 goto runez

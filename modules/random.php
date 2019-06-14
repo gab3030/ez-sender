@@ -1,19 +1,17 @@
 <?php
 
-$art = "
-   __  _____      __                _               ||  
-  /__\/ _  /     / _\ ___ _ __   __| | ___ _ __     ||  Last Update : 12 / 06 / 2019
- /_\  \// / _____\ \ / _ \ '_ \ / _` |/ _ \ '__|    ||  Current Version : 1.2
-//__   / //\_____|\ \  __/ | | | (_| |  __/ |       ||  Codename : Kambing
-\__/  /____/     \__/\___|_| |_|\__,_|\___|_|       ||  Author : Mukhlis Akbarrudin
-this is a free tool don't ever want to buy it       ||                                              
-";
+// don't change anything
 
-function berisi($input){
-    if (empty($input) ) {
-        return 'no';
-    } else { return 'yes';}
-}
+$art = "
+     __  _____      __                _             |                                
+    /__\/ _  /     / _\ ___ _ __   __| | ___ _ __   |  Last Update : 14 / 06 / 2019  
+   /_\  \// / _____\ \ / _ \ '_ \ / _` |/ _ \ '__|  |  Current Version : 1.3         
+  //__   / //\_____|\ \  __/ | | | (_| |  __/ |     |  Codename : Anjing             
+  \__/  /____/     \__/\___|_| |_|\__,_|\___|_|     |  Author : Mukhlis Akbarrudin   
+  this is a free tool don't ever want to buy it     |                              
+    
+======================================================================================                               
+";
 
 function random_array_value($arrX){
     @$randIndex = array_rand(@$arrX);
