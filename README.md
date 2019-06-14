@@ -30,7 +30,7 @@ This tool allows you to send mass / bulk emails with lots of customization. Inte
 
 - Download file "git clone https://github.com/mukhlisakbr/ez-sender.git"
 - Enter directory "cd ez-sender"
-- Execute this command "php ez.php"
+- Execute this command "php run.php"
 
 ### Requirements
 
